@@ -1,0 +1,103 @@
+<form id="contactForm">
+
+  <input
+    type="text"
+    id="name"
+    required>
+
+  <input
+    type="email"
+    id="email"
+    required>
+
+  <button type="submit">
+    送信
+  </button>
+
+      </form>
+      <script>
+
+const form =
+document.getElementById('contactForm');
+
+form.addEventListener('submit', (e) => {
+
+  const name =
+  document.getElementById('name').value;
+
+  if(name === ""){
+
+    e.preventDefault();
+
+    alert("お名前を入力してください");
+
+  }
+
+});
+
+</script>
+
+
+
+<script>
+    const fadeEls = document.querySelectorAll('.fade-up');
+
+    const fadeIn = () => {
+      fadeEls.forEach(el => {
+        const rect = el.getBoundingClientRect();
+
+        if (rect.top < window.innerHeight - 100) {
+          el.classList.add('show');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', fadeIn);
+    window.addEventListener('load', fadeIn);
+  </script>
+  <script>
+    const accordions = document.querySelectorAll('.accordion');
+
+    accordions.forEach(item => {
+
+      const title = item.querySelector('h3');
+
+      title.addEventListener('click', () => {
+        item.classList.toggle('active');
+      });
+
+    });
+  </script>
+  <script>
+    window.addEventListener('load', () => {
+      const loading = document.getElementById('loading');
+
+      setTimeout(() => {
+        loading.classList.add('hide');
+      }, 800);
+    });
+  </script>
+  <script>
+    const lineMini = document.getElementById('lineMini');
+
+    window.addEventListener('scroll', () => {
+
+      if (window.scrollY > 700) {
+        lineMini.classList.add('show');
+      } else {
+        lineMini.classList.remove('show');
+      }
+
+    });
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 80,
+    });
+  </script>
+  <script type="application/ld+json">
+

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/ress.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>無料体験・相談フォーム｜みんなのパソコン教室 なんば校</title>
+  <meta name="description" content="みんなのパソコン教室なんば校の無料体験・相談フォームです。初心者の方、再就職・転職に向けてPCスキルを身につけたい方はお気軽にご相談ください。">
+</head>
+
+<body class="form-page">
+
+  <section class="form-hero">
+
+    <header class="form-header">
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/logo.png" alt="みんなのパソコン教室 なんば校">
+        </a>
+      </div>
+
+      <a href="index.html" class="form-back-btn">
+        TOPへ戻る
+      </a>
+    </header>
+
+    <div class="form-container">
+
+      <div class="form-title-wrap">
+        <p class="form-label">無料体験・相談</p>
+        <h1>まずはお気軽に<br>ご相談ください</h1>
+        <p class="form-lead">
+          未経験・パソコンが苦手な方も大歓迎。<br>
+          少人数制だから安心して学べます。
+        </p>
+      </div>
+      <form class="trial-form" id="contactForm" name="contact" method="POST" action="/thanks.html" data-netlify="true">
+
+        <input type="hidden" name="form-name" value="contact">
+
+        <div class="form-row">
+          <label>お名前 <span>必須</span></label>
+          <input type="text" name="name" placeholder="例）山田 花子" required>
+        </div>
+
+        <div class="form-row">
+          <label>ふりがな <span>必須</span></label>
+          <input type="text" name="kana" placeholder="例）やまだ はなこ" required>
+        </div>
+
+        <div class="form-row">
+          <label>メールアドレス <span>必須</span></label>
+          <input type="email" name="email" placeholder="例）sample@example.com" required>
+        </div>
+
+        <div class="form-row">
+          <label>電話番号</label>
+          <input type="tel" name="tel" placeholder="例）090-1234-5678">
+        </div>
+
+        <div class="form-row">
+          <label>希望内容 <span>必須</span></label>
+          <select name="purpose" required>
+            <option value="">選択してください</option>
+            <option>無料体験を希望</option>
+            <option>まずは相談したい</option>
+            <option>コースについて聞きたい</option>
+            <option>料金について聞きたい</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label>希望日時</label>
+          <input type="text" name="date" placeholder="例）平日18時以降、土日午前など">
+        </div>
+
+        <div class="form-row">
+          <label>気になるコース</label>
+          <select name="course">
+            <option value="">選択してください</option>
+            <option>Wordアドバンス講座</option>
+            <option>Officeソフト基礎講座</option>
+            <option>Excel MOSマスター講座</option>
+            <option>まだ決まっていない</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label>ご相談内容</label>
+          <textarea name="message" placeholder="パソコンの不安、転職に向けて学びたいことなどをご記入ください"></textarea>
+        </div>
+        <div class="form-row">
+          <label>お問い合わせ種別</label>
+
+          <div class="radio-group">
+            <label>
+              <input type="radio" name="type" checked>
+              無料体験
+            </label>
+
+            <label>
+              <input type="radio" name="type">
+              資料請求
+            </label>
+
+            <label>
+              <input type="radio" name="type">
+              無料相談
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="form-submit">
+          送信する
+          <span>▶</span>
+        </button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+</body>
+
+</html>
